@@ -6,7 +6,7 @@ RUN ls -alh
 ADD  ./testrepo/tpAchatProject*.jar tpAchatProject-1.0.jar 
 
 RUN ls -alh
-ENTRYPOINT ["java","-jar","./testrepo/tpAchatProject-1.0.jar"]
+ENTRYPOINT ["java","-jar","tpAchatProject-1.0.jar"]
 COPY ./testrepo/* .  
 
 

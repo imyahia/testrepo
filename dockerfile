@@ -1,4 +1,4 @@
-FROM maven:3.8.8-openjdk-10-slim
+FROM maven:3.8.8-openjdk-11-slim
 WORKDIR /spring-app
 
 COPY . .  

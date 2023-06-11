@@ -4,7 +4,5 @@ RUN ls -alh
 COPY ./testrepo/pom.xml ./
 RUN ls -alh
 
-COPY ./testrepo/* .  
-
 RUN mvn clean install  spring-boot:repackage -Dmaven.test.skip=true
-
+COPY ./testrepo/* .  
